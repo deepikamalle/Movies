@@ -136,9 +136,10 @@ app.delete("/movies/:movieId/", async (request, response) => {
 
 
 const convertDirectorDetailsPascalCase = (dbObject) => {
-    return
+    return{
 directorId: dbObject.director_id,
 directorName: dbObject.director_name,
+    }     
 };
 };
 
